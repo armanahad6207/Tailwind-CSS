@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>customize screen and color</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          // customScreen
+          screens: {
+            sm: "540px",
+            // => @media (min-width: 540px) { ... }
+
+            md: "668px",
+            // => @media (min-width: 768px) { ... }
+
+            lg: "1024px",
+            // => @media (min-width: 1024px) { ... }
+
+            xl: "1280px",
+            // => @media (min-width: 1280px) { ... }
+
+            "2xl": "1536px",
+            // => @media (min-width: 1536px) { ... }
+          },
+          extend: {
+            // need to add mor screen size customScreen
+            screens: {
+              xs: "240px",
+            },
+            // customolors
+            colors: {
+              c1: "#01a1c1",
+              c2: "#12bd34",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <h1
+      class="text-3xl xs:text-blue-400 sm:text-center sm:text-red-200 md:text-right md:text-blue-900 text-c1 font-bold underline"
+    >
+      Hello world!
+    </h1>
+  </body>
+</html>
