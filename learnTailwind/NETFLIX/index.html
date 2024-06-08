@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="h-[100vh] w-[100%] bg-[url('./assets/IN-en-20240603-popsignuptwoweeks-perspective_alpha_website_large.jpg')] bg-cover"
+    >
+      <div class="h-[100vh] w-[100%] bg-[rgb(0,0,0,.3)]">
+        <header
+          class="max-w-[1070px] mx-auto grid sm:grid-cols-2 px-5 py-5 grid-cols-[30%_auto] items-center"
+        >
+          <figure>
+            <h1 class="text-2xl sm:text-4xl font-extrabold text-red-600">
+              NETFLIX
+            </h1>
+          </figure>
+          <div class="flex justify-end space-x-4">
+            <select
+              name=""
+              id=""
+              class="bg-[rgb(0,0,0,.3)] border border-white outline-none sm:px-4 sm:py-1 px-1 py-[2px] rounded-md text-white"
+            >
+              <option value="">Hindi</option>
+              <option value="">English</option>
+            </select>
+            <div>
+              <button
+                class="bg-red-600 hover:bg-red-700 sm:px-3 sm:py-2 px-2 py-[4px] text-white text-sm rounded-md"
+              >
+                Sign In
+              </button>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+  </body>
+</html>
